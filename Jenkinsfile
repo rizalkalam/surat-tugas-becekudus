@@ -11,6 +11,9 @@ pipeline{
             steps {
                 sh 'sudo rm -r /var/www/testingfothink.my.id/html/src/*'
                 sh 'sudo cp -r /home/rizalkalam/.jenkins/workspace/reactpersuratan/* /var/www/testingfothink.my.id/html/'
+                sh 'sudo npm install'
+		        sh 'sudo run build'
+		        sh 'scp -r ./build/* /var/www/testingfothink.my.id/html'
             }
         }
     }
