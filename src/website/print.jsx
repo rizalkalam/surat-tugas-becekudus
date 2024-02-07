@@ -194,7 +194,7 @@ function Print() {
             <a href="">DB</a>
           </li>
           <li onClick={() => navigate("/database")}>
-            <a href="">DATABASE</a>
+            <a href="">BACKUP</a>
           </li>
           <li className="active">
             <a href="">PRINT</a>
@@ -212,7 +212,7 @@ function Print() {
 
         <div className="box-print">
           <div className="head-print">
-            NO&nbsp;SURAT&nbsp;TUGAS&nbsp;:&nbsp;
+            MASUKAN&nbsp;NO&nbsp;IDENTITAS&nbsp;:&nbsp;
             <input
               type="number"
               placeholder="....."
